@@ -1,6 +1,6 @@
-h1.Sending email using Google Apps
+h1. Sending email using Google Apps
 
-h2.Set the config/environment.rb
+h2. Set the config/environment.rb
 
 <pre>
 <code>
@@ -21,6 +21,6 @@ end
 </code>
 </pre>
 
-h2.SMTP TLS
+h2. SMTP TLS
 
 Copy the file <b>smtp_tls.rb</b> to <b>lib</b> directory of your Ruby on Rails project.
