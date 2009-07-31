@@ -1,0 +1,26 @@
+h1.Sending email using Google Apps
+
+h2.Set the config/environment.rb
+
+<pre>
+<code>
+...
+require 'smtp_tls'
+
+Rails::Initializer.run do |config|
+...
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :authentication => :plain,
+    :user_name => "your-name@yourdomain.com",
+    :password => "your password"
+  }
+end
+</code>
+</pre>
+
+h2.SMTP TLS
+
+Copy the file <b>smtp_tls.rb</b> to <b>lib</b> directory of your Ruby on Rails project.
